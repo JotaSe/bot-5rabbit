@@ -2,7 +2,7 @@ require 'sinatra'
 require 'json'
 
 post '/caracola' do
-  if !params[:text].nil? || params[:text].strip[-1, 1] == '?'
+  if !params[:text].nil?
     response
   else
     respond_message 'Eso no es una pregunta'
